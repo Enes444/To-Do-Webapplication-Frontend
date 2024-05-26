@@ -13,16 +13,26 @@
 export default {
   data() {
     return {
-      tasks: [
-        { id: 1, name: 'Abgabe Milestone' },
-        { id: 2, name: 'Vorarbeit informationssicherheit' },
-        { id: 3, name: 'Vorarbeit ' }
-      ]
+      tasks: []
     };
+  },
+  created() {
+    this.fetchTodos();
+  },
+  methods: {
+    async fetchTodos() {
+      try {
+        const response = await fetch('https://my-springboot-app.onrender.com/api/todos');
+        const data = await response.json();
+        this.tasks = data;
+      } catch (error) {
+        console.error('Fehler beim Abrufen der Todos:', error);
+      }
+    }
   }
 };
 </script>
 
 <style scoped>
-/* Hier kommt später der stil, den habe ich noch nicht definiert */
+/* Hier kommt später der Stil, den habe ich noch nicht definiert */
 </style>

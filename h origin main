@@ -1,0 +1,24 @@
+[33mcommit 5de8749e666f7673a104eae48f4a1f4855115050[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Merge: 5fce651 08147f2
+Author: Enes Kulanoglu <Enes.Kulanoglu@gmail.com>
+Date:   Sun May 12 21:37:07 2024 +0200
+
+    readme conflict fix
+
+[33mcommit 5fce6516242009f0669f9fa64d7a0756adaf3ee4[m
+Author: Enes Kulanoglu <Enes.Kulanoglu@gmail.com>
+Date:   Sun May 12 21:34:28 2024 +0200
+
+    frontend
+
+[33mcommit 08147f27b761888b5484bf8df0330846f2c0fe13[m
+Author: Enes Kulanoglu <115490014+Enes444@users.noreply.github.com>
+Date:   Sun May 12 21:13:59 2024 +0200
+
+    Initial commit
+
+[33mcommit 03df45af1a3aabb8c6efe6a7c8725da238e3cd00[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Enes Kulanoglu <Enes.Kulanoglu@gmail.com>
+Date:   Sat May 11 18:30:57 2024 +0200
+
+    init
