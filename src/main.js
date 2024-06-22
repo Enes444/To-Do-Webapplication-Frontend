@@ -1,4 +1,11 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from 'vue';
+import App from './App.vue';
+import index from './router';
+import axios from 'axios';
 
-createApp(App).mount('#app')
+
+axios.defaults.baseURL = 'https://my-springboot-app.onrender.com';
+
+const app = createApp(App);
+app.use(index);
+app.mount('#app');
