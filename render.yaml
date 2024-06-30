@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: my-todo-app-frontend
+    runtime: node
+    buildCommand: npm install --legacy-peer-deps && npm run build
+    startCommand: npm run serve
+    repo: https://github.com/Enes444/To-Do-Webapplication-Frontend
+    branch: main
+    region: oregon
+    plan: free
+    envVars:
+      - key: NODE_VERSION
+        value: 20.12.2
