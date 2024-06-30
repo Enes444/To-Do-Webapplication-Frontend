@@ -30,6 +30,9 @@
 <script>
 import axios from 'axios';
 
+// Setzen Sie die Basis-URL für Axios
+axios.defaults.baseURL = 'https://my-springboot-app.onrender.com';
+
 export default {
   name: 'TodoDetailView',
   props: {
