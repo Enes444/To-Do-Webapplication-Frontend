@@ -9,5 +9,12 @@ module.exports = defineConfig({
         pathRewrite: { '^/api': '' }
       }
     }
+  },
+  configureWebpack: {
+    resolve: {
+      alias: {
+        'vue$': 'vue/dist/vue.esm-bundler.js'
+      }
+    }
   }
 });
