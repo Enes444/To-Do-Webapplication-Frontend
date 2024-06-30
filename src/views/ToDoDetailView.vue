@@ -31,7 +31,7 @@
 import axios from 'axios';
 
 // Setzen Sie die Basis-URL für Axios
-axios.defaults.baseURL = 'https://my-springboot-app.onrender.com';
+axios.defaults.baseURL = 'https://my-springboot-app.onrender.com/';
 
 export default {
   name: 'TodoDetailView',
@@ -60,12 +60,14 @@ export default {
     // Methode zum Abrufen des Todos vom Server
     async fetchTodo() {
       try {
-        const response = await axios.get(`/api/todos/${this.id}`);
+        const response = await axios.get(`https://my-springboot-app.onrender.com/api/todos/${this.id}`);
         this.todo = response.data;
         this.subtasks = this.todo.subtasks || [];
       } catch (error) {
         console.error('Error fetching todo:', error);
+        console.log('Error details:', error.response ? error.response.data : error.message);
       }
+    }
     },
     // Methode zum Hinzufügen einer neuen Unteraufgabe
     addSubtask() {
