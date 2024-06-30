@@ -80,4 +80,11 @@ describe('TodoListComponent.vue', () => {
 
     // Test, ob zur Detailansicht eines Todos navigiert wird
     it('sollte zur Detailansicht eines Todos navigieren', () => {
-        const todo = { id: 1, title: 'Test Todo
+        const todo = { id: 1, title: 'Test Todo 1', dueDate: '2023-12-31' };
+        const push = jest.fn();
+        wrapper.vm.$router = { push };
+
+        wrapper.vm.viewDetails(todo);
+        expect(push).toHaveBeenCalledWith({ name: 'todo-detail', query: { id: todo.id } });
+    });
+});

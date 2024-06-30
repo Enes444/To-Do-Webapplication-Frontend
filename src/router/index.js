@@ -23,4 +23,4 @@ const router = createRouter({
     routes // Hinzufügen der definierten Routen
 });
 
-export default router; // Exportieren des Routers zur Verwendung in der Hauptanwendung
+export default router; // Exportieren des Routers zur Verwendung in der Hauptanwendungzur Verwendung in der Hauptanwendung

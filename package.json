@@ -13,14 +13,14 @@
     "@vuelidate/validators": "^2.0.4",
     "axios": "^1.7.2",
     "core-js": "^3.8.3",
+    "vue": "^3.2.31",
     "vue-router": "^4.1.6",
-    "vuetify": "^3.1.0",
-    "vue": "^3.2.31"
+    "vuetify": "^3.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.21.0",
-    "@babel/preset-env": "^7.24.7",
     "@babel/eslint-parser": "^7.19.1",
+    "@babel/preset-env": "^7.24.7",
     "@vue/cli-plugin-babel": "^5.0.8",
     "@vue/cli-plugin-eslint": "^5.0.8",
     "@vue/cli-plugin-unit-jest": "^5.0.8",
