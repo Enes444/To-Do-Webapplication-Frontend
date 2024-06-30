@@ -4,7 +4,7 @@ module.exports = defineConfig({
   devServer: {
     proxy: {
       '/api': {
-        target: 'http://localhost:8080',
+        target: 'https://my-springboot-app.onrender.com/',
         changeOrigin: true,
         pathRewrite: { '^/api': '' }
       }
