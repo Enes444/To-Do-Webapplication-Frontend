@@ -111,11 +111,19 @@ export default {
 .dark-mode-item {
   background-color: #555 !important;
   color: #fff !important;
+  margin-bottom: 8px; /* Abstand zwischen den Subtasks */
+  border-radius: 4px; /* Abgerundete Ecken */
+  padding: 8px; /* Polsterung innerhalb der Box */
 }
 
 .light-mode-item {
   background-color: #fff !important;
   color: #000 !important;
+  margin-bottom: 8px; /* Abstand zwischen den Subtasks */
+  border: 1px solid #ddd; /* Leichter Rahmen */
+  border-radius: 4px; /* Abgerundete Ecken */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Leichter Schatten */
+  padding: 8px; /* Polsterung innerhalb der Box */
 }
 
 .dark-mode-input .v-input__control {
@@ -126,5 +134,8 @@ export default {
 .light-mode-input .v-input__control {
   background-color: #fff !important;
   color: #000 !important;
+  border: 1px solid #ddd; /* Leichter Rahmen */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Leichter Schatten */
+  border-radius: 4px; /* Abgerundete Ecken */
 }
 </style>
